@@ -28,7 +28,7 @@ const students = [
     { id: "박세준2", password: "1010", score: "Na", grade: "-등급",
       message1: "지금도 좋지만, 한 단계 더 도약할 수 있어요!", 
       message2: "성적역사 - Na", 
-      downloadLink: "Non-specific-link" },
+      downloadLink: "https://horaeng.com/storage/2022%E1%84%82%E1%85%A7%E1%86%AB-%E1%84%80%E1%85%A92-11%E1%84%8B%E1%85%AF%E1%86%AF-%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%E1%84%80%E1%85%A9%E1%84%89%E1%85%A1-%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A5-%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5%E1%86%AF.pdf" },
 
     { id: "구재모2", password: "1212", score: "Na", grade: "-등급",
       message1: "분석을 통해 실수를 줄여봅시다!", 
