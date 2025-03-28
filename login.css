@@ -71,23 +71,19 @@ button:hover {
     font-size: 1.5rem;
 }
 
-/* "수고하셨습니다" 텍스트 */
+/* 추가 메시지 */
+#student-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* 수고하셨습니다 */
 #congratulations {
     font-size: 1.2rem;
     margin-top: 20px;
     font-weight: bold;
     color: #333;
     animation: fadeInUp 0.5s ease-in-out;
-}
-
-/* 페이드 인 애니메이션 */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* "수고하셨습니다" 애니메이션 */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
