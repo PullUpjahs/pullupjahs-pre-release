@@ -5,7 +5,7 @@ const students = [
       message2: "성적역사 - Na", 
       downloadLink: "?" },
 
-    { id: "김가연1", password: "8888", score: "Na", grade: "-등급",
+    { id: "김가연1", password: "8888", score: "74", grade: "3등급",
       message1: "훌륭한 성과입니다! 계속 좋은 성적을 유지하세요.", 
       message2: "성적역사 - Na", 
       downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
