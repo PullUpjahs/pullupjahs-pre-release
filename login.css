@@ -1,59 +1,93 @@
 /* 전체 배경 스타일 */
 body {
-    background: linear-gradient(to bottom, #3399ff 33%, white 33%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(86, 84, 209, 0.4) 33.3%, rgba(255, 255, 255, 0.9) 33.3%);
+    height: 100vh;
     margin: 0;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 애니메이션 원 */
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background: white;
-    animation: ripple 15s infinite;
-    box-shadow: 0px 0px 1px 0px #508fb9;
+/* 제목 스타일 */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-/* 원 크기 설정 */
-.small { width: 200px; height: 200px; left: 20px; bottom: -100px; }
-.medium { width: 400px; height: 400px; left: 50px; bottom: -200px; }
-.large { width: 600px; height: 600px; left: 100px; bottom: -300px; }
-.xlarge { width: 800px; height: 800px; left: 150px; bottom: -400px; }
-.xxlarge { width: 1000px; height: 1000px; left: 200px; bottom: -500px; }
-
-/* 원 투명도 조절 */
-.shade1 { opacity: 0.2; }
-.shade2 { opacity: 0.5; }
-.shade3 { opacity: 0.7; }
-.shade4 { opacity: 0.8; }
-.shade5 { opacity: 0.9; }
-
-/* 원 애니메이션 */
-@keyframes ripple {
-    0% { transform: scale(0.8); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(0.8); }
+/* 부제목 스타일 */
+.subtitle {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 20px;
 }
 
-/* 로그인 및 성적 정보 박스 */
-#login-container, #student-info {
-    position: relative;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.9);
+/* 로그인 컨테이너 */
+#login-container {
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: all 0.5s ease-in-out;
 }
 
-/* 성적 정보 스타일 */
+/* 버튼 스타일 */
+button {
+    background: linear-gradient(to bottom, #00ff7f, #008000);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #00cc66, #006600);
+}
+
+/* 성적 정보 박스 */
+#student-info {
+    background: rgba(0, 255, 100, 0.6);
+    color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 점수 텍스트 */
 #student-score {
-    font-size: 20px;
     font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
 }
 
-#student-message {
-    font-size: 18px;
+/* "수고하셨습니다" 텍스트 */
+#congratulations {
+    font-size: 1.2rem;
+    margin-top: 20px;
     font-weight: bold;
-    color: darkgreen;
+    color: #333;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* 페이드 인 애니메이션 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* "수고하셨습니다" 애니메이션 */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
