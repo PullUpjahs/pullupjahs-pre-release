@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pull-Up! 자율동아리</title>
-    <link rel="stylesheet" href="login.css">
-</head>
 <body>
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle medium shade4"></div>
+    <div class="circle small shade5"></div>
+
     <h1 class="title">Pull-Up! 자율동아리</h1>
-    <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.
-매주 월/금 20시 확인 부탁드립니다.</p>
+    <p class="subtitle">학생 성적을 확인하고 관련 자료를 다운로드할 수 있는 로그인 페이지입니다.</p>
 
     <div id="login-container">
         <form id="loginForm">
@@ -27,14 +24,11 @@
     <div id="student-info" style="display: none;">
         <h2>성적 정보</h2>
         <p id="student-score"></p>
+        <p id="student-message"></p>
         <a id="download-link" href="#" target="_blank">해설지 다운로드</a>
         <br><br>
         <button id="back-button">돌아가기</button>
-
-        <!-- 추가 성적 메시지 -->
-        <div id="student-message"></div>
     </div>
 
     <script src="login.js"></script>
 </body>
-</html>
