@@ -1,9 +1,9 @@
 // 전체 학생 데이터
 const students = [
-    { id: "이동훈1", password: "1111", score: "74", grade: "3등급",
+    { id: "이동훈1", password: "1111", score: "Na", grade: "-등급",
       message1: "조금만, 조금만 더 노력해 봅시다.", 
       message2: "성적역사 - Na", 
-      downloadLink: "?" },
+      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "김가연1", password: "8888", score: "74", grade: "3등급",
       message1: "훌륭한 성과입니다! 계속 좋은 성적을 유지하세요.", 
@@ -13,17 +13,17 @@ const students = [
     { id: "신가영1", password: "7777", score: "86", grade: "2등급",
       message1: "진짜 아깝습니다! 이번 시험을 오답하면서 다음 시험을 대비해보세요.", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍나연1", password: "2222", score: "86", grade: "2등급",
       message1: "좋은 성적이에요! 꾸준히 노력하세요!", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2023%EB%85%84-%EA%B3%A01-6%EC%9B%94-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍수민1", password: "3333", score: "82", grade: "2등급",
       message1: "시험 준비를 열심히 했네요!", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2023%EB%85%84-%EA%B3%A01-6%EC%9B%94-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "박세준2", password: "1010", score: "Na", grade: "-등급",
       message1: "지금도 좋지만, 한 단계 더 도약할 수 있어요!", 
