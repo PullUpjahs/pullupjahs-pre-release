@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1 class="title">Pull-Up! 자율동아리</h1>
-    <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.
-매주 월/금 20시 확인 부탁드립니다.</p>
+    <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.<br>매주 월/금 20시 확인 부탁드립니다.</p>
 
     <div id="login-container">
         <form id="loginForm">
@@ -21,6 +20,14 @@
 
             <button type="submit">로그인</button>
         </form>
+    </div>
+
+    <!-- 우수자 박스 -->
+    <div id="top-student" style="display: none; background: rgba(255, 215, 0, 0.9); color: black; padding: 15px; border-radius: 10px; width: 320px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); margin-bottom: 20px; font-size: 1.2rem; font-weight: bold; text-align: center;">
+        <h2>🎖 성적 우수자 🎖</h2>
+        <p id="top-student-name">이름: <span>미정</span></p>
+        <p id="top-student-subject">과목: <span>미정</span></p>
+        <p id="top-student-score" style="color: red; font-weight: bold; font-size: 1.5rem;">성적: <span>미정</span></p>
     </div>
 
     <!-- 로그인 후 성적을 표시할 부분 -->
