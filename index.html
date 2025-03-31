@@ -10,14 +10,6 @@
     <h1 class="title">Pull-Up! 자율동아리</h1>
     <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.<br>매주 월/금 20시 확인 부탁드립니다.</p>
 
-    <!-- ✅ 우수자 박스를 기본적으로 보이도록 수정 -->
-    <div id="top-student" style="background: rgba(255, 215, 0, 0.9); color: black; padding: 15px; border-radius: 10px; width: 320px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); margin-bottom: 20px; font-size: 1.2rem; font-weight: bold; text-align: center;">
-        <h2>🎖 성적 우수자 🎖</h2>
-        <p id="top-student-name">이름: <span>미정</span></p>
-        <p id="top-student-subject">과목: <span>Na</span></p>
-        <p id="top-student-score" style="color: red; font-weight: bold; font-size: 1.5rem;">성적: <span>미정</span></p>
-    </div>
-
     <div id="login-container">
         <form id="loginForm">
             <label for="userId">아이디:</label>
@@ -28,6 +20,14 @@
 
             <button type="submit">로그인</button>
         </form>
+    </div>
+
+    <!-- ✅ 우수자 박스를 로그인 박스 아래로 이동 -->
+    <div id="top-student" style="background: rgba(255, 215, 0, 0.9); color: black; padding: 15px; border-radius: 10px; width: 320px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); margin-top: 20px; font-size: 1.2rem; font-weight: bold; text-align: center;">
+        <h2>🎖 성적 우수자 🎖</h2>
+        <p id="top-student-name">이름: <span>미정</span></p>
+        <p id="top-student-subject">과목: <span>미정</span></p>
+        <p id="top-student-score" style="color: red; font-weight: bold; font-size: 1.5rem;">성적: <span>미정</span></p>
     </div>
 
     <!-- 로그인 후 성적을 표시할 부분 -->
