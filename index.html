@@ -19,12 +19,17 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        #student-info {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <h1 class="title">Pull-Up! 자율동아리</h1>
     <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.<br>매주 월/금 20시 확인 부탁드립니다.</p>
 
+    <!-- 로그인 폼 -->
     <div id="login-container">
         <form id="loginForm">
             <label for="userId">아이디:</label>
@@ -37,29 +42,28 @@
         </form>
     </div>
 
+    <!-- 로그인 후 성적을 표시할 부분 -->
+    <div id="student-info">
+        <h2>성적 정보</h2>
+        <p id="student-score"></p>
+        <a id="download-link" href="#" target="_blank">해설지 다운로드</a>
+        <br><br>
+        <button id="back-button">돌아가기</button>
+
+        <!-- 추가 성적 메시지 -->
+        <div id="student-message"></div>
+    </div>
+
     <!-- 성적 우수자 정보 표시 영역 -->
     <p id="toggle-top-student">성적 우수자 보기 🔽</p>
     
     <!-- 성적 우수자 정보 -->
     <div id="top-student">
         <p>성적 우수자 이름: 홍길동</p>
-        <p>성적: 98점</p>
+        <p>성적: 93점 | 1등급</p>
+        <p>우수자 메시지: "대단한 점수네요!"</p>
     </div>
 
-    <script>
-        // 성적 우수자 정보 토글
-        const toggleButton = document.getElementById('toggle-top-student');
-        const topStudentDiv = document.getElementById('top-student');
-
-        toggleButton.addEventListener('click', () => {
-            if (topStudentDiv.style.display === 'none' || topStudentDiv.style.display === '') {
-                topStudentDiv.style.display = 'block';
-                toggleButton.textContent = '성적 우수자 숨기기 ▲';
-            } else {
-                topStudentDiv.style.display = 'none';
-                toggleButton.textContent = '성적 우수자 보기 🔽';
-            }
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
