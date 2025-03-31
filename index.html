@@ -23,6 +23,12 @@
         #student-info {
             display: none;
         }
+
+        /* 성적 텍스트 스타일 */
+        .top-student-score {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +66,8 @@
     <!-- 성적 우수자 정보 -->
     <div id="top-student">
         <p>성적 우수자 이름: 홍길동</p>
-        <p>성적: 93점 | 1등급</p>
+        <!-- 과목 성적 표시: 빨간색 볼드 -->
+        <p class="top-student-score">과목1: 93점 | 과목2: 91점</p>
         <p>우수자 메시지: "대단한 점수네요!"</p>
     </div>
 
