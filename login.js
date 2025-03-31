@@ -65,8 +65,11 @@ const students = [
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // 기본 폼 제출 방지
 
-    const userId = document.getElementById("userId").value;
-    const password = document.getElementById("password").value;
+    const userId = document.getElementById("userId").value.trim();  // trim()으로 공백 제거
+    const password = document.getElementById("password").value.trim();  // trim()으로 공백 제거
+
+    console.log("아이디:", userId);
+    console.log("비밀번호:", password);
 
     const student = students.find(s => s.id === userId && s.password === password);
 
