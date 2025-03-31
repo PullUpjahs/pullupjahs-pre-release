@@ -61,6 +61,7 @@ const students = [
       downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A02-3%EC%9B%94-%ED%95%99%ED%8F%89%EC%84%9C%EC%9A%B8_4.24-%EC%8B%9C%ED%96%89-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" }
 ];
 
+// 로그인 처리
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // 기본 폼 제출 방지
 
