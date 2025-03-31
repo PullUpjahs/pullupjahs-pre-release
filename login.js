@@ -20,9 +20,9 @@ const students = [
       message2: "성적역사 - 수학23년6월 고1 점수:86점/2등급", 
       downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
 
-    { id: "홍수민1", password: "3333", score: "82", grade: "2등급",
-      message1: "시험 준비를 열심히 했네요!", 
-      message2: "성적역사 - Na", 
+    { id: "홍수민1", password: "3333", score: "93", grade: "1등급",
+      message1: "대단한 점수네요, 영어 모의고사 준비를 열심히 했네요!", 
+      message2: "성적역사 - 국어23년6월 고1 점수:82점/2등급", 
       downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "박세준2", password: "1010", score: "Na", grade: "-등급",
