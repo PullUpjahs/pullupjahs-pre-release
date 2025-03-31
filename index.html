@@ -22,12 +22,13 @@
         </form>
     </div>
 
-    <!-- ✅ 우수자 박스를 로그인 박스 아래로 이동 -->
-    <div id="top-student" style="background: rgba(255, 215, 0, 0.9); color: black; padding: 15px; border-radius: 10px; width: 320px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); margin-top: 20px; font-size: 1.2rem; font-weight: bold; text-align: center;">
-        <h2>🎖 성적 우수자 🎖</h2>
-        <p id="top-student-name">이름: <span>미정</span></p>
-        <p id="top-student-subject">과목: <span>미정</span></p>
-        <p id="top-student-score" style="color: red; font-weight: bold; font-size: 1.5rem;">성적: <span>미정</span></p>
+    <!-- ✅ 성적 우수자 보기 (클릭하면 보이고 사라짐) -->
+    <p id="toggle-top-student" style="color: blue; cursor: pointer; font-weight: bold; margin-top: 20px;">성적 우수자 보기 🔽</p>
+    
+    <div id="top-student" style="display: none; text-align: center; margin-top: 10px;">
+        <p>이름: <span id="top-student-name">미정</span></p>
+        <p>과목: <span id="top-student-subject">미정</span></p>
+        <p>성적: <span id="top-student-score" style="color: red; font-weight: bold;">미정</span></p>
     </div>
 
     <!-- 로그인 후 성적을 표시할 부분 -->
@@ -42,6 +43,17 @@
         <div id="student-message"></div>
     </div>
 
-    <script src="login.js"></script>
+    <script>
+        document.getElementById("toggle-top-student").addEventListener("click", function() {
+            let topStudentDiv = document.getElementById("top-student");
+            if (topStudentDiv.style.display === "none") {
+                topStudentDiv.style.display = "block";
+                this.textContent = "성적 우수자 닫기 🔼";
+            } else {
+                topStudentDiv.style.display = "none";
+                this.textContent = "성적 우수자 보기 🔽";
+            }
+        });
+    </script>
 </body>
 </html>
