@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1 class="title">Pull-Up! 자율동아리</h1>
-    <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.<br>매주 월/금 20시 확인 부탁드립니다.</p>
+    <p class="subtitle">성적 확인 및 해설지 다운로드용 페이지입니다.
+매주 월/금 20시 확인 부탁드립니다.</p>
 
     <div id="login-container">
         <form id="loginForm">
@@ -20,15 +21,6 @@
 
             <button type="submit">로그인</button>
         </form>
-    </div>
-
-    <!-- ✅ 성적 우수자 보기 (클릭하면 보이고 사라짐) -->
-    <p id="toggle-top-student" style="color: blue; cursor: pointer; font-weight: bold; margin-top: 20px;">성적 우수자 보기 🔽</p>
-    
-    <div id="top-student" style="display: none; text-align: center; margin-top: 10px;">
-        <p>이름: <span id="top-student-name">미정</span></p>
-        <p>과목: <span id="top-student-subject">미정</span></p>
-        <p>성적: <span id="top-student-score" style="color: red; font-weight: bold;">미정</span></p>
     </div>
 
     <!-- 로그인 후 성적을 표시할 부분 -->
@@ -43,53 +35,6 @@
         <div id="student-message"></div>
     </div>
 
-    <script>
-        // 학생 데이터
-        const students = [
-            { id: "이동훈1", password: "1111", score: "45", grade: "1등급",
-              message1: "대단하네요! 아직 통합과학 제대로 시작하지도 않았을 텐데.", 
-              message2: "성적역사 - Na", 
-              downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" }
-        ];
-
-        // 로그인 기능
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            const userId = document.getElementById("userId").value;
-            const password = document.getElementById("password").value;
-
-            const student = students.find(s => s.id === userId && s.password === password);
-
-            if (student) {
-                document.getElementById("login-container").style.display = "none";
-                document.getElementById("student-info").style.display = "block";
-                document.getElementById("student-score").innerHTML = `<strong>점수:</strong> ${student.score}점 | <span style="color: Red; font-weight: bold;">${student.grade}</span>`;
-                document.getElementById("student-message").innerHTML = `<p style="color: darkgreen; font-size: 18px; font-weight: bold;">${student.message1}</p><p style="color: darkgreen; font-size: 16px;">${student.message2}</p>`;
-                document.getElementById("download-link").href = student.downloadLink;
-            } else {
-                alert("로그인 실패: 아이디 또는 비밀번호가 잘못되었습니다.");
-            }
-        });
-
-        // 돌아가기 버튼
-        document.getElementById("back-button").addEventListener("click", function() {
-            document.getElementById("student-info").style.display = "none";
-            document.getElementById("login-container").style.display = "block";
-            document.getElementById("userId").value = "";
-            document.getElementById("password").value = "";
-        });
-
-        // 성적 우수자 보기 기능
-        document.getElementById("toggle-top-student").addEventListener("click", function() {
-            let topStudentDiv = document.getElementById("top-student");
-            if (topStudentDiv.style.display === "none") {
-                topStudentDiv.style.display = "block";
-                this.textContent = "성적 우수자 닫기 🔼";
-            } else {
-                topStudentDiv.style.display = "none";
-                this.textContent = "성적 우수자 보기 🔽";
-            }
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
-</html>
+</html> 
