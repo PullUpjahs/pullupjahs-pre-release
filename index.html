@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pull-Up! 자율동아리</title>
     <link rel="stylesheet" href="login.css">
+    <style>
+        #toggle-top-student {
+            color: blue;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #top-student {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1 class="title">Pull-Up! 자율동아리</h1>
@@ -22,108 +37,27 @@
         </form>
     </div>
 
-    <!-- 로그인 후 성적을 표시할 부분 -->
-    <div id="student-info" style="display: none;">
-        <h2>성적 정보</h2>
-        <p id="student-score"></p>
-        <a id="download-link" href="#" target="_blank">해설지 다운로드</a>
-        <br><br>
-        <button id="back-button">돌아가기</button>
-
-        <!-- 성적 우수자 보기 버튼 -->
-        <p id="toggle-top-student" style="color: blue; cursor: pointer; font-weight: bold; margin-top: 20px;">성적 우수자 보기 🔽</p>
-        
-        <!-- 성적 우수자 정보 -->
-        <div id="top-student" style="display: none; text-align: center; margin-top: 10px;">
-            <p>이름: <span id="top-student-name">미정</span></p>
-            <p>성적: <span id="top-student-score" style="color: red; font-weight: bold;">미정</span></p>
-        </div>
-
-        <!-- 추가 성적 메시지 -->
-        <div id="student-message"></div>
+    <!-- 성적 우수자 정보 표시 영역 -->
+    <p id="toggle-top-student">성적 우수자 보기 🔽</p>
+    
+    <!-- 성적 우수자 정보 -->
+    <div id="top-student">
+        <p>성적 우수자 이름: 홍길동</p>
+        <p>성적: 98점</p>
     </div>
 
     <script>
-        // 전체 학생 데이터
-        const students = [
-            { id: "이동훈1", password: "1111", score: 45, grade: "1등급", 
-              message1: "대단하네요! 아직 통합과학 제대로 시작하지도 않았을 텐데.", 
-              message2: "성적역사 - Na", 
-              downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+        // 성적 우수자 정보 토글
+        const toggleButton = document.getElementById('toggle-top-student');
+        const topStudentDiv = document.getElementById('top-student');
 
-            { id: "김가연1", password: "8888", score: 74, grade: "3등급", 
-              message1: "훌륭한 성과입니다! 계속 좋은 성적을 유지하세요.", 
-              message2: "성적역사 - Na", 
-              downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
-
-            { id: "신가영1", password: "7777", score: 50, grade: "1등급", 
-              message1: "놀랍네요! 이렇게만 계속해서 과학탐구점수 수능까지 들고갑시다!", 
-              message2: "성적역사 - 국어24년6월 고1 점수:86점/2등급", 
-              downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
-
-            // 추가 학생들
-        ];
-
-        // 로그인 처리
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // 기본 폼 제출 방지
-
-            const userId = document.getElementById("userId").value.trim();  // trim()으로 공백 제거
-            const password = document.getElementById("password").value.trim();  // trim()으로 공백 제거
-
-            console.log("아이디:", userId);
-            console.log("비밀번호:", password);
-
-            const student = students.find(s => s.id === userId && s.password === password);
-
-            if (student) {
-                // 로그인 성공 시 로그인 폼 숨기고 성적 정보 표시
-                document.getElementById("login-container").style.display = "none";
-                document.getElementById("student-info").style.display = "block";
-
-                // 성적 정보 표시 (등급은 하늘색)
-                document.getElementById("student-score").innerHTML = `
-                    <strong>점수:</strong> ${student.score}점 | 
-                    <span style="color: Red; font-weight: bold;">${student.grade}</span>
-                `;
-
-                // 학생별 성적 관련 메시지 2개 표시
-                document.getElementById("student-message").innerHTML = `
-                    <p style="color: darkgreen; font-size: 18px; font-weight: bold;">${student.message1}</p>
-                    <p style="color: darkgreen; font-size: 16px;">${student.message2}</p>
-                `;
-
-                // 해설지 다운로드 링크 설정
-                document.getElementById("download-link").href = student.downloadLink;
-
-                // 성적 우수자 표시
-                const topStudent = students.reduce((top, current) => (current.score > top.score ? current : top), students[0]);
-                document.getElementById("top-student-name").textContent = topStudent.id;
-                document.getElementById("top-student-score").textContent = topStudent.score + "점";
+        toggleButton.addEventListener('click', () => {
+            if (topStudentDiv.style.display === 'none' || topStudentDiv.style.display === '') {
+                topStudentDiv.style.display = 'block';
+                toggleButton.textContent = '성적 우수자 숨기기 ▲';
             } else {
-                alert("로그인 실패: 아이디 또는 비밀번호가 잘못되었습니다.");
-            }
-        });
-
-        // 돌아가기 버튼 클릭 시 로그인 화면으로 복귀
-        document.getElementById("back-button").addEventListener("click", function() {
-            document.getElementById("student-info").style.display = "none"; // 성적 정보 숨기기
-            document.getElementById("login-container").style.display = "block";
-
-            // 입력 필드 초기화
-            document.getElementById("userId").value = "";
-            document.getElementById("password").value = "";
-        });
-
-        // 성적 우수자 보기 기능
-        document.getElementById("toggle-top-student").addEventListener("click", function() {
-            let topStudentDiv = document.getElementById("top-student");
-            if (topStudentDiv.style.display === "none") {
-                topStudentDiv.style.display = "block";
-                this.textContent = "성적 우수자 닫기 🔼";
-            } else {
-                topStudentDiv.style.display = "none";
-                this.textContent = "성적 우수자 보기 🔽";
+                topStudentDiv.style.display = 'none';
+                toggleButton.textContent = '성적 우수자 보기 🔽';
             }
         });
     </script>
