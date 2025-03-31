@@ -44,6 +44,42 @@
     </div>
 
     <script>
+        // 학생 데이터
+        const students = [
+            { id: "이동훈1", password: "1111", score: "45", grade: "1등급",
+              message1: "대단하네요! 아직 통합과학 제대로 시작하지도 않았을 텐데.", 
+              message2: "성적역사 - Na", 
+              downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" }
+        ];
+
+        // 로그인 기능
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const userId = document.getElementById("userId").value;
+            const password = document.getElementById("password").value;
+
+            const student = students.find(s => s.id === userId && s.password === password);
+
+            if (student) {
+                document.getElementById("login-container").style.display = "none";
+                document.getElementById("student-info").style.display = "block";
+                document.getElementById("student-score").innerHTML = `<strong>점수:</strong> ${student.score}점 | <span style="color: Red; font-weight: bold;">${student.grade}</span>`;
+                document.getElementById("student-message").innerHTML = `<p style="color: darkgreen; font-size: 18px; font-weight: bold;">${student.message1}</p><p style="color: darkgreen; font-size: 16px;">${student.message2}</p>`;
+                document.getElementById("download-link").href = student.downloadLink;
+            } else {
+                alert("로그인 실패: 아이디 또는 비밀번호가 잘못되었습니다.");
+            }
+        });
+
+        // 돌아가기 버튼
+        document.getElementById("back-button").addEventListener("click", function() {
+            document.getElementById("student-info").style.display = "none";
+            document.getElementById("login-container").style.display = "block";
+            document.getElementById("userId").value = "";
+            document.getElementById("password").value = "";
+        });
+
+        // 성적 우수자 보기 기능
         document.getElementById("toggle-top-student").addEventListener("click", function() {
             let topStudentDiv = document.getElementById("top-student");
             if (topStudentDiv.style.display === "none") {
