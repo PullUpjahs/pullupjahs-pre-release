@@ -1,7 +1,7 @@
 // 전체 학생 데이터
 const students = [
-    { id: "이동훈1", password: "1111", score: "Na", grade: "-등급",
-      message1: "조금만, 조금만 더 노력해 봅시다.", 
+    { id: "이동훈1", password: "1111", score: "45", grade: "1등급",
+      message1: "대단하네요! 아직 통합과학 제대로 시작하지도 않았을 텐데.", 
       message2: "성적역사 - Na", 
       downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
@@ -10,9 +10,9 @@ const students = [
       message2: "성적역사 - Na", 
       downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
-    { id: "신가영1", password: "7777", score: "86", grade: "2등급",
-      message1: "진짜 아깝습니다! 이번 시험을 오답하면서 다음 시험을 대비해보세요.", 
-      message2: "성적역사 - Na", 
+    { id: "신가영1", password: "7777", score: "50", grade: "1등급",
+      message1: "놀랍네요! 이렇게만 계속해서 과학탐구점수 수능까지 들고갑시다!", 
+      message2: "성적역사 - 국어24년6월 고1 점수:86점/2등급", 
       downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍나연1", password: "2222", score: "86", grade: "2등급",
