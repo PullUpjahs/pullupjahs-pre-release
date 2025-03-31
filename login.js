@@ -106,3 +106,16 @@ document.getElementById("back-button").addEventListener("click", function() {
     document.getElementById("userId").value = "";
     document.getElementById("password").value = "";
 });
+    // 성적 우수자 정보 토글 기능
+document.getElementById("toggle-top-student").addEventListener("click", function() {
+    var topStudent = document.getElementById("top-student");
+    
+    // 성적 우수자 정보 표시/숨기기
+    if (topStudent.style.display === "none") {
+        topStudent.style.display = "block";
+        this.innerHTML = "성적 우수자 숨기기 🔼";
+    } else {
+        topStudent.style.display = "none";
+        this.innerHTML = "성적 우수자 보기 🔽";
+    }
+});
