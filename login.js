@@ -113,9 +113,9 @@ document.getElementById("toggle-top-student").addEventListener("click", function
     // 성적 우수자 정보 표시/숨기기
     if (topStudent.style.display === "none") {
         topStudent.style.display = "block";
-        this.innerHTML = "성적 우수자 점수 숨기기 🔼";
+        this.innerHTML = "공지사항 숨기기 🔼";
     } else {
         topStudent.style.display = "none";
-        this.innerHTML = "성적 우수자 점수 보기 🔽";
+        this.innerHTML = "공지사항 보기 🔽";
     }
 });
