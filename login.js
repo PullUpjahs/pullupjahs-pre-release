@@ -58,7 +58,7 @@ const students = [
     { id: "한태혁2", password: "2929", score: "56", grade: "5등급",
       message1: "개념 정리가 필요해요!", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A02-3%EC%9B%94-%ED%95%99%ED%8F%89%EC%84%9C%EC%9A%B8_4.24-%EC%8B%9C%ED%96%89-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" }
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-3%EC%9B%94-%EA%B3%A02-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" }
 ];
 
 // 로그인 처리
