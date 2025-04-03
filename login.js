@@ -8,17 +8,17 @@ const students = [
     { id: "김가연1", password: "8888", score: "74", grade: "3등급",
       message1: "훌륭한 성과입니다! 계속 좋은 성적을 유지하세요.", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A01-6%EC%9B%94-%ED%95%99%ED%8F%89%EB%B6%80%EC%82%B0-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "신가영1", password: "7777", score: "50", grade: "1등급",
       message1: "놀랍네요! 이렇게만 계속해서 과학탐구점수 수능까지 들고갑시다!", 
       message2: "성적역사 - 국어24년6월 고1 점수:86점/2등급", 
-      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%86%B5%ED%95%A9%EA%B3%BC%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍나연1", password: "2222", score: "60", grade: "4등급",
       message1: "괜찮습니다, 풀업 동아리에서 꾸준한 연습과 피드백을 받으면서 같이 성적을 끌어올려봅시다! 꾸준히 노력하세요!", 
       message2: "성적역사 - 수학23년6월 고1 점수:86점/2등급", 
-      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A01-6%EC%9B%94-%ED%95%99%ED%8F%89%EB%B6%80%EC%82%B0-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍수민1", password: "3333", score: "93", grade: "1등급",
       message1: "대단한 점수네요, 영어 모의고사 준비를 열심히 했네요!", 
@@ -33,7 +33,7 @@ const students = [
     { id: "구재모2", password: "1212", score: "Na", grade: "-등급",
       message1: "분석을 통해 실수를 줄여봅시다!", 
       message2: "성적역사 - Na", 
-      downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A02-9%EC%9B%94-%ED%95%99%ED%8F%89%EC%9D%B8%EC%B2%9C-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A02-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "신비2", password: "4545", score: "Na", grade: "-등급",
       message1: "완벽한 성적! 대단해요!", 
