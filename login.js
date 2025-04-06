@@ -13,17 +13,17 @@ const students = [
     { id: "신가영1", password: "7777", score: "81", grade: "2등급",
       message1: "조금만 더 열심히해서 1등급 달성합시다!", 
       message2: "성적역사 - 국어24년6월 고1 점수:86점/2등급\n 통합과학6월 고1 점수:50점/1등급", 
-      downloadLink: "https://horaeng.com/storage/2024%EB%85%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2023%EB%85%84-%EA%B3%A01-6%EC%9B%94-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍나연1", password: "2222", score: "65", grade: "2등급",
       message1: "유난히 어렵웠던 수학시험, 수고하셨습니다 조금 더 열심히해서 1등급갑시다!", 
       message2: "성적역사 - 수학23년6월 고1 점수:86점/2등급\n 영어24년6월 고1 점수:60점/4등급", 
-      downloadLink: "https://horaeng.com/storage/2020%EB%85%84-%EA%B3%A01-6%EC%9B%94-%ED%95%99%ED%8F%89%EB%B6%80%EC%82%B0-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-9%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%88%98%ED%95%99-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "홍수민1", password: "3333", score: "93", grade: "1등급",
       message1: "대단한 점수네요, 영어 모의고사 준비를 열심히 했네요!", 
       message2: "성적역사 - 국어23년6월 고1 점수:82점/2등급", 
-      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-6%EC%9B%94-%EA%B3%A01-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EC%98%81%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
+      downloadLink: "https://horaeng.com/storage/2021%ED%95%99%EB%85%84%EB%8F%84-11%EC%9B%94-%EA%B3%A01-%EA%B5%AD%EC%96%B4-%ED%95%B4%EC%84%A4.pdf" },
 
     { id: "박세준2", password: "1010", score: "Na", grade: "-등급",
       message1: "지금도 좋지만, 한 단계 더 도약할 수 있어요!", 
